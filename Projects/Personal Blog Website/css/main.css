@@ -1,3 +1,100 @@
 @import url("phone.css");
 @import url("tablet.css");
 @import url('https://fonts.googleapis.com/css?family=Ovo|Quattrocento+Sans');
+
+* {
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-column-gap: 16px;
+	grid-row-gap: 0px;
+	grid-template-areas: 
+      "hd hd hd hd hd hd hd hd hd hd hd hd"
+      "main main main main main main main main main main main main"
+      "ft ft ft ft ft ft ft ft ft ft ft ft";
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1640px;
+}
+
+.header {
+	grid-area: hd;
+	border: 1px solid red;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.site-name {
+	width: 60%;
+	height: 75px;
+	border: 1px solid red;
+	font-size: 18px;
+	font-family: "Ovo", sans-serif;
+	display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.nav {
+	width: 40%;	
+	height: 75px;
+	border: 1px solid red;
+}
+
+#header-nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    list-style: none;
+    height: 100%;
+}
+
+#header-nav li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #616161;
+    font-family: "Quattrocento Sans", sans-serif;  
+}
+
+#header-nav li a:hover {
+	color: #374C9F;
+	border-bottom: 1px dotted #374C9F;
+}
+
+.main-header {
+	width: 100%;
+}
+
+.hello {
+	color: #374C9F;
+}
+
+h1 {
+	font-size: 48px;
+	font-family: "Ovo", sans-serif;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 24px;
+    font-family: "Quattrocento Sans", sans-serif;
+}
+
+.page-body {
+	grid-area: main;
+	border: 1px solid red;
+}
+
+.footer {
+	grid-area: ft;
+	border: 1px solid red;
+}
