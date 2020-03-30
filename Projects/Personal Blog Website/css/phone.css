@@ -1,0 +1,26 @@
+@media screen and (max-width: 480px) {
+
+	.site-name, .header-nav li a {
+		font-size: 14px !important;
+	}
+	.hello {
+		width: 100% !important;
+	}
+	
+	.card {
+		flex: auto !important;
+	}
+	
+	.card img {
+		width: 100% !important;
+	}
+	
+	.post-container {
+	    grid-template-columns: repeat(6, 1fr) !important;
+	    grid-template-areas:
+	        "hd hd hd hd hd hd"
+	        "postmain postmain postmain postmain postmain postmain"
+	        "sd sd sd sd sd sd"
+	        "ft ft ft ft ft ft" !important;
+	}
+}

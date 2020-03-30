@@ -1,6 +1,6 @@
-@import url("phone.css");
-@import url("tablet.css");
-@import url('https://fonts.googleapis.com/css?family=Ovo|Quattrocento+Sans');
+@import "phone.css";
+@import "tablet.css";
+@import url("https://fonts.googleapis.com/css?family=Ovo|Quattrocento+Sans");
 
 * {
   box-sizing: border-box;
@@ -15,6 +15,18 @@
 	grid-template-areas: 
       "hd hd hd hd hd hd hd hd hd hd hd hd"
       "main main main main main main main main main main main main"
+      "ft ft ft ft ft ft ft ft ft ft ft ft";
+    margin: 0px auto;
+    max-width: 1640px;
+}
+.post-container {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column-gap: 16px;
+	grid-row-gap: 0px;
+	grid-template-areas: 
+      "hd hd hd hd hd hd hd hd hd hd hd hd"
+      "postmain postmain postmain postmain postmain postmain postmain postmain sd sd sd sd"
       "ft ft ft ft ft ft ft ft ft ft ft ft";
     margin: 0px auto;
     max-width: 1640px;
@@ -69,6 +81,7 @@
 
 .main-header {
 	width: 100%;
+	background-color: #F7DEDB;
 }
 
 .hello {
@@ -110,6 +123,66 @@ h2 {
 	justify-content: space-around;
     align-content: center;
     flex-wrap: wrap;
+}
+
+.post-body {
+	grid-area: postmain;
+	border: 1px solid red;
+    font: normal;
+}
+
+blockquote {
+	font-style: italic;
+	font-size: 24px;
+    font-family: "Quattrocento Sans", sans-serif;
+    color: #374C9F;
+}
+
+b {
+	font-weight: bold;
+}
+
+.image-header {
+	background-image: url("../images/img_header.jpg");
+	background-position: center top;
+	background-size: cover;
+	height: 300px;	
+	width: 100%;
+}
+
+.sidebar {
+	grid-area: sd;
+	border: 1px solid red;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+.avatar {
+	height: 75px;
+	width: 20%;
+	min-width: 75px;
+}
+
+.avatar img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px solid #374C9F;
+	margin: 20px 10px;
+}
+
+.bio {
+	width: 80%;
+}
+
+.sidebar h3 {
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "Ovo", sans-serif;
+	margin: 0 auto;
+	color: #374C9F;
+	text-align: left;
 }
 
 h3 {
@@ -185,4 +258,7 @@ h4 {
 	border: 1px solid red;
 	font-size: 12px;
     font-family: "Quattrocento Sans", sans-serif;
+    color: #fff;
+    padding: 25px;
+    background-color: #374C9F;
 }

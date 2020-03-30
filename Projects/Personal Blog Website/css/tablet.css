@@ -1,0 +1,24 @@
+@media (min-width: 480px) and (max-width: 1199px) {
+
+	.hello {
+			width: 100% !important;
+	}
+	
+	.card {
+		max-width: 500px !important;
+		min-width: 250px !important;
+	}
+	
+	.card img {
+		width: 100% !important;
+	}
+	
+	.post-container {
+		grid-template-columns: repeat(6, 1fr) !important;
+	    grid-template-areas:
+	        "hd hd hd hd hd hd"
+	        "postmain postmain postmain postmain sd sd"
+	        "ft ft ft ft ft ft" !important;
+	}
+
+}
