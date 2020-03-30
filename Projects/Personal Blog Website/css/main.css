@@ -125,7 +125,7 @@ h3 {
 h4 {
 	font-size: 24px;
 	font-family: "Ovo", sans-serif;
-	margin-bottom: 0px;
+	margin: 0 auto;
 	color: #374C9F;
 	text-align: left;
 }
@@ -134,7 +134,7 @@ h4 {
 	max-width: 500px;
 	border-radius: 0px 0px 6px 6px;
 	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.16);
-	margin: 0px 15px;
+	margin: 15px 15px;
 }
 
 .card-container {
@@ -183,4 +183,6 @@ h4 {
 .footer {
 	grid-area: ft;
 	border: 1px solid red;
+	font-size: 12px;
+    font-family: "Quattrocento Sans", sans-serif;
 }
